@@ -1,0 +1,32 @@
+version: '3'
+services:
+  frontend:
+    build:
+      context: ./paused-P2P-carpooling
+      dockerfile: Dockerfile
+    ports:
+      - "3000:3000"
+    restart: always
+
+  backend:
+    build:
+      context: ./paused-P2P-carpooling/backend
+      dockerfile: Dockerfile
+    ports:
+      - "4000:4000"
+    restart: always
+
+  mongodb:
+    image: mongo
+    container_name: cont_mongo
+    ports:
+      - "27017:27017"
+    environment:
+      - MONGO_INITDB_ROOT_USERNAME=mongoadmin
+      - MONGO_INITDB_ROOT_PASSWORD=bdung
+    volumes:
+      - mongodb-data:/data/db
+    restart: always
+
+volumes:
+  mongodb-data:
