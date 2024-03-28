@@ -12,10 +12,15 @@ Before you begin, ensure you have the following installed:
 1. Fork and Clone the Repository:
 
    ```
-   git clone https://github.com/<your-username>/project-name.git
+   git clone https://github.com/<your-username>/paused-P2P-carpooling-dockerized.git
    ```
 2. Build and Run the Containers:
 
    ```
    docker compose up -d
    ```
+Note: Make sure you're in ``paused-P2P-carpooling-dockerized`` folder. 
+
+3. Wait for Services to Initialize: Depending on your project, some services (like databases) may take a moment to initialize. You can use the ``./wait-for-it`` script to wait for specific services to be ready. Modify the script as needed for your services.
+
+4. 
