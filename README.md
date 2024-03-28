@@ -1,5 +1,5 @@
 ## Paused-P2P-carpooling
-Welcome to the Project Name repository! This project utilizes Docker and Docker Compose to manage a multi-container application. Follow the instructions below to get started.
+Welcome to the Paused-P2P-Carpooling repository! This project utilizes Docker and Docker Compose to manage a multi-container application. Follow the instructions below to get started.
 
 Prerequisites
 Before you begin, ensure you have the following installed:
